@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 {
+    padding: 30px 0;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(0, 201, 0);
+}
+
+.navbar-nav {
+    text-align: right;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    text-align: left;
+}
+
+a btn btn-light {
+    margin-left: 50px;
+}
+
+article img, article a {
+    cursor: pointer;
+}
+
+header {
+    background-color: rgb(250, 243, 234);
+}
+
+section {
+    padding-top: 70px;
+}
+
+.carousel-item img {
+    padding-top: 40px;
+    height: 300px;
+    object-fit: cover; /* mantêm a proporção da imagem */
+}
+
+#produtos .card-header {
+    padding-top: 13px;
+}
+
+#contato input {
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+#contato textarea {
+    resize: none;
+    height: 60px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+#contato {
+    padding-bottom: 40px;
+}
+
+footer {
+    background-color: rgb(250, 243, 234);
+    padding: 10px 0;
+}
+
+footer .container  {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+.social-links img {
+    height: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+a.btn  {
+    display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 400px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-item {
+        margin-right: 15px;
+    }
+
+    .col-sm-12 {
+        padding-bottom: 20px;
+    }
+
+    a.btn {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        padding-top: 30px;
+    }
+
+    #contato input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #contato textarea, #contato button {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 10px;
+        font-weight: 600;
+        padding-top: 5px;
+    }
+
+    .social-links img {
+        margin-left: 3px;
+    }
+
+    main img {
+        height: 276.38px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .col-md-6 {
+        padding-bottom: 20px;
+    }
+
+    a.btn {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        padding-top: 30px;
+    }
+
+    #contato input {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    #contato textarea {
+        width: 60%;
+    }
+
+    footer p {
+        font-size: 15px;
+        font-weight: 400;
+        padding-top: 5px;
+    }
+
+    .social-links img {
+        margin-left: 10px;
+    }
+
+    main img {
+        height: 322px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main img {
+        height: 346px;
+    }
+
+    a.btn {
+        display: flex;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>MED SHOP</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="container">
+            <div class="navbar navbar-expand-lg navbar-expand-md"> <!-- em telas largas expande o conteudo do menu em uma linha reta -->
+                <h1>MED SHOP</h1>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> <!-- 'navbar-toggler' identifica o botão como um controlador do menu de navegação em telas menores | data-bs-toggle="collapse" sinaliza que o botão é responsável pro alternar um elemento colapsável | data-bs-target="#menu" define o alvo do botão, indicando qual elelemento será colapsado -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav"> <!-- 'navbar-nav' deixa os itens um embaixo do outro -->
+                        <li class='nav-item'> <!-- 'nav-item' identifica os itens do menu de navegação -->
+                            <a class="nav-link" href="#sobre-a-loja" data-bs-toggle="modal" data-bs-target="#modal-sobre-a-loja">Sobre nós</a> <!-- 'nav-link' estiliza o texto como um link | 'active' indica qual elemento está ativo no momento -->
+                            <div class="modal" id="modal-sobre-a-loja" data-bs-backdrop="static">
+                                <div class="modal-dialog modal-dialog-centered"> <!-- 'modal-dialog' abriga o conteúdo principal da modal -->
+                                    <div class="modal-content"> <!-- contêiner que abriga todo o conteúdo da modal, incluindo o cabeçalho, corpo e rodapé -->
+                                        <div class="modal-header">
+                                            <h5>Sobre a MED SHOP</h5>
+                                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button> <!-- 'data-bs-dismiss="modal"' indica que o botão criado está associado à ação de fechar a modal -->
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis eius vero, nam minima vitae error maxime earum molestias inventore dicta quaerat illum, similique quos rem voluptates veniam! Doloremque, incidunt exercitationem.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class='nav-item'>
+                            <a class="nav-link active" href="#destaque">Destaque</a>
+                        </li>
+
+                        <li class='nav-item'>
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id='carousel-seta-slide' class="carousel slide" data-bs-ride="carousel"> <!-- 'data-bs-ride="carousel"'' indica que o carrossel iniciará automaticamente quando a página for carregada -->
+            <div class="carousel-inner"> <!--'carousel-inner' é a área onde os itens do carrossel serão exibidos -->
+                <div data-bs-interval='3000' class="carousel-item active"><!-- 'data-bs-interval' define o intervalo de tempo em milissegundos para a transição automática para o próximo slide -->
+                    <img class="w-100" src="images/slide 1.jpg" alt="frases motivacionais">
+                </div>
+
+                <div data-bs-interval='3000' class="carousel-item">
+                    <img class="w-100" src="images/slide 2.jpg" alt="frases motivacionais">
+                </div>
+
+                <div data-bs-interval='3000' class="carousel-item">
+                    <img class="w-100" src="images/slide 3.jpg" alt="frases motivacionais">
+                </div>
+
+                <div data-bs-interval='3000' class="carousel-item">
+                    <img class="w-100" src="images/slide 4.jpg" alt="frases motivacionais">
+                </div>
+            </div>
+
+            <button data-bs-target="#carousel-seta-slide" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button data-bs-target="#carousel-seta-slide" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-seta-slide" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-seta-slide" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-seta-slide" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-seta-slide" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+    </div>
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho"> <!-- 'data-bs-spy="scroll"' instrui o Bootstrap a observar a rolagem de dentro do elemento | 'data-bs-target="#cabecalho"' determina o alvo (target) que o Scrollspy monitorará -->
+        <div class="container">
+            <section id="destaque">
+                <h2>Destaques</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class='card'>
+                                <img src="images/luva-destaque.webp" alt="Luxa Látex">
+                                <div class="card-body">
+                                    <h4 class="card-title">Luva Látex</h4>
+                                    <p class="card-text">Protege os profissionais da saúde em hospitais, consultórios e clínicas em procedimentos não invasivos.</p>
+                                    <a href="#" class="btn btn-success">Comprar</a>
+                                    <a href="#" class="btn btn-light">Características</a>
+                                    <a href="#" class="btn btn-warning">Dúvida</a>
+                                </div>
+                            </article>
+                        </div>
+        
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class='card'>
+                                <img src="images/oximetro-destaque.webp" alt="Oxímetro de Pulso">
+                                <div class="card-body">
+                                    <h4 class="card-title">Oxímetro de Pulso Portátil</h4>
+                                    <p class="card-text">Monitora a porcentagem de saturação do oxigênio no sangue e, também, dos batimentos cardíacos por minuto.</p>
+                                    <a href="#" class="btn btn-success">Comprar</a>
+                                    <a href="#" class="btn btn-light">Características</a>
+                                    <a href="#" class="btn btn-warning">Dúvida</a>
+                                </div>
+                            </article>
+                        </div>
+        
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class='card'>
+                                <img src="images/estetoscopio-destaque.webp" alt="Estetoscópio">
+                                <div class="card-body">
+                                    <h4 class="card-title">Estetoscópio Clássico</h4>
+                                    <p class="card-text">Com alta qualidade de fabricação e acabamento, proporciona acústica clara e confiável para avaliações clínicas precisas.</p>
+                                    <a href="#" class="btn btn-success">Comprar</a>
+                                    <a href="#" class="btn btn-light">Características</a>
+                                    <a href="#" class="btn btn-warning">Dúvida</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="produtos">
+                <main>
+                    <h2>Produtos</h2>
+                    <div class="container">
+                        <nav class="nav nav-tabs"> <!-- 'nav-tabs' deixa os elementos com uma linha de contorno -->
+                            <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active" type="button">Ortopedia e Traumatologia</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link" type="button">Cirurgia Geral</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link" type="button">Pediatria</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba4" class="nav-link" type="button">Ginecologia e Obstetrícia</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba5" class="nav-link" type="button">Anestesiologia</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba6" class="nav-link" type="button">Dermatologia</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba7" class="nav-link" type="button">Clinica Médica</button>
+                            <button data-bs-toggle="tab" data-bs-target="#aba8" class="nav-link" type="button">Radiologia</button>
+                        </nav>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="aba1">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/bota_ortopedica.jpg" alt="Bota Ortopédica">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Bota Ortopédica Imobilizadora</h4>
+                                                <p class="card-text">Mantém o equilíbrio do corpo, podendo ser usada tanto no pé direito quanto no esquerdo, além de possibilita a imobilização do tornozelo.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/tesoura_ortopedica.jpg" alt="Tesoura Angular Ortopédica">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Tesoura Inox Angular Ortopedica</h4>
+                                                <p class="card-text">Utilizada para dissecção sem esforço de tecidos e outras estruturas tais como bandagens, curativos, remover ataduras e cortar gesso</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/muleta_ortopedica.webp" alt="Muleta Ortopédica">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Muleta Ortopédica Canadense</h4>
+                                                <p class="card-text">Proporcionam equilíbrio, apoio e sustentação quando é necessário preservar o membro inferior. Diminui a descarga de peso nos membros inferiores.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="aba2">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/caixa_cirurgica-cirurgia.webp" alt="Caixa de cirurgia completa">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Caixa de Cirurgia Completa</h4>
+                                                <p class="card-text">Coleção de instrumentos e suprimentos médicos específicos para procedimentos cirúrgicos. Oferecem uma gama de ferramentas necessárias para cirurgias.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/kit_sutura-cirurgia.jpg" alt="Kit Sutura Simulador">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Kit Sutura Simulador</h4>
+                                                <p class="card-text">Ideal para profissionais da área da saúde que buscam o aperfeiçoamento da técnica de sutura em diversas posições e formatos</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/kit_medidas-cirurgia.webp" alt="Kit de Medidas para Cirurgia Plástica">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Kit de Medidas para Plástica</h4>
+                                                <p class="card-text">Instrumentos e ferramentas utilizados para realizar avaliações pré-operatórias, durante a cirurgia e no pós-operatório de procedimentos estéticos.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="aba3">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/kit-pediatria.png" alt="Kit Clinico de Pediatria">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Kit Clínico de Pediatria</h4>
+                                                <p class="card-text">Kits que oferecem ferramentas necessárias para realizar exames, avaliar sintomas, fazer diagnósticos e administrar tratamentos básicos em crianças.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/abaixador_de_lingua-pediatria.jpg" alt="Abaixador de Língua Colorido com Aroma">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Abaixador de Língua</h4>
+                                                <p class="card-text">Tornam a experiência do exame mais agradável. Os diferentes aromas máscaram o sabor desagradável de alguns produtos usados durante o exame oral.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/esfigmomanometro-pediatria.webp" alt="Esfigmomanômetro aneroide infantil">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Esfigmomanômetro Infantil</h4>
+                                                <p class="card-text">Dimensionado para braços menores e é mais sensível a pressões mais baixas, permitindo medir a pressão arterial em crianças</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="aba4">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/especulo_vaginal-go.webp" alt="Espéculo Vaginal Estéril Descartável">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Espéculo Vaginal Estéril</h4>
+                                                <p class="card-text">Indicado para exame especular ginecológico, com a finalidade de visualização da cavidade vaginal e colo uterino e coleta de exames</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/manipulador_uterino-go.jpg" alt="Manipulador Uterino">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Manipulador Uterino</h4>
+                                                <p class="card-text">Flexibilidade de ajuste de altura com diferentes ângulos e tamanhos de pontas para fixar o colo do útero. Possui tubo de válvula de descarga.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/maca_eletrica-go.webp" alt="Maca Elétrica para Ginecologia">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Maca Elétrica para Ginecologia</h4>
+                                                <p class="card-text">Possui 4 movimentos individuais, apoio para as coxas que podem ser ajustados, assim como remover os braços e o respiro de pescoço.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="aba5">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/mascara-anestesia.webp" alt="Máscara Para Anestesia">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Máscara Para Anestesia</h4>
+                                                <p class="card-text">Indicada para administração de oxigênio e gás de anestesia ao paciente. Máscara facial em PVC, descartável, formato anatômico e coxim inflável.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/fluxometro-anestesia.webp" alt="Fluxômetro para Oxigênio">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Fluxômetro para Oxigênio</h4>
+                                                <p class="card-text">Regula e controla a quantidade de oxigênio fornecido a um paciente, onde os medidores numéricos indicam o fluxo de oxigênio em L/min</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/vaporizador-anestesia.jpg" alt="Vaporizador Universal">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Vaporizador Universal</h4>
+                                                <p class="card-text">Administra uma ampla variedade de medicamentos para o sistema respiratório, permitindo que a medicação atinja rapidamente a área afetada</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="aba6">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/kit_creme-dermato.webp" alt="Kit de Linpeza de Pele">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Kit de Linpeza de Pele</h4>
+                                                <p class="card-text">Produtos para controlar a oleosidade e cuidar bem da sua pele, dais deles são gel de limpeza, ácido salicílico, vitamina c, ácido mandélico, retinol, hidratante e ácido lático</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/bisturi_eletrico-dermato.webp" alt="Bisturi Elétrico">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Bisturi Elétrico</h4>
+                                                <p class="card-text">Realiza incisões precisas e coagulação de tecidos durante procedimentos cirúrgicos. Utiliza corrente elétrica de alta frequência para cortar, coagular e vaporizar tecidos biológicos.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/kit-dermato.webp" alt="Kit Dermatológico">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Kit Dermatológico</h4>
+                                                <p class="card-text">Instrumentos utilizadas para diagnósticos, tratamentos e procedimentos relacionados à pele. Atendem às necessidades específicas de exames e procedimentos dermatológicos.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="aba7">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/termometro-cm.jpg" alt="Termômetro">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Termômetro</h4>
+                                                <p class="card-text">Instrumento para avaliar a saúde de um paciente, diagnosticar condições médicas e monitorar a resposta do corpo a diferentes situações.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/kit_emergencia-cm.png" alt="Kit de Emergência">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Kit de Emergência</h4>
+                                                <p class="card-text">Conjunto de equipamentos e suprimentos para o atendimento de situações críticas ou as que precisem de intervenção imediata.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/fita_metrica-cm.webp" alt="Fita Métrica">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Fita Métrica</h4>
+                                                <p class="card-text">Coleta dados sobre as dimensões corporais dos pacientes, auxiliando no diagnóstico e tratamento de diversas condições de saúde.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="aba8">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/digitalizador_imagem-radio.webp" alt="Digitalizador de Imagem Radiográfica">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Digitalizador de Imagem</h4>
+                                                <p class="card-text">Converte imagens radiográficas analógicas em formato digital, além de permite armazenar, visualizar, processar e compartilhar as imagens.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/imagem_digital-radio.webp" alt="Detector Digital de Raio-X">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Detector Digital de Raio-X</h4>
+                                                <p class="card-text">Captura imagens de raios-X, aumenta a eficiência na obtenção de imagens, possui uma exposição menor à radiação e uma melhor resolução e nitidez. </p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                    
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <article class='card'>
+                                            <img src="images/monitor-radio.webp" alt="Monitor Diagnóstico">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Monitor Diagnóstico</h4>
+                                                <p class="card-text">Projetados com características como luminância, contraste, tamanho e resolução, que atendem aos requisitos mínimos estabelecidos.</p>
+                                                <a href="#" class="btn btn-success">Comprar</a>
+                                                <a href="#" class="btn btn-light">Características</a>
+                                                <a href="#" class="btn btn-warning">Dúvida</a>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </section>
+
+            <section id="contato">
+                <div class="container">
+                    <h2>Contato</h2>
+                    <form>
+                        <input type="text" class='form-control' id="nome" placeholder="Seu nome:" name="nome">
+                        <input type="text" class="form-control" placeholder="Seu e-mail:" name="email">
+                        <input type="text" class="form-control" id="produto-interesse" placeholder="Seu produto" name="nomeProduto">
+                        <textarea id="mensagem" class="form-control" placeholder="Sua mensagem:" name="mensage"></textarea>
+                        <button class="btn btn-primary d-block">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>2023&copy; MED SHOP - Todos os direitos reservados</p>
+            <div class="social-links">
+                <a href="#">
+                    <img src="images/icone-facebook.png" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="images/icone-instagram.png" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="images/icone-whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/validate_form.js"></script>
+    <script src="lib/bootstrap.budle.min.js"></script>
+    <script src="lib/validate_mensage.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
