@@ -5,8 +5,16 @@ Este projeto é uma loja virtual dedicada à venda de produtos médicos e equipa
 ## Funcionalidades 🌟
 
 - **Compra de Produtos:** Os usuários podem navegar pela seleção de produtos, visualizar detalhes e especificações, e realizar compras online com facilidade.
+
+![image](https://github.com/lyannabueno/med_shop/assets/130186281/2cc79050-49be-43c3-ae76-f8fad52f5b8c)
+
 - **Consulta de Informações:** Cada produto possui uma página ou modal com informações detalhadas, incluindo características, benefícios e indicações de uso.
+
+![image](https://github.com/lyannabueno/med_shop/assets/130186281/37359d27-6ee4-4790-86c5-f035da6b87bc)
+
 - **Contato Direto:** Usuários com dúvidas ou que necessitam de assistência podem facilmente entrar em contato com a equipe da loja através da seção de contato, garantindo um suporte eficiente e personalizado.
+
+![image](https://github.com/lyannabueno/med_shop/assets/130186281/13b12694-9b27-4679-afc2-8cc618914482)
 
 ## Tecnologias Utilizadas 📚
 
