@@ -1,55 +1,51 @@
 # MED SHOP 🏥
 
-Este projeto é uma loja virtual dedicada à venda de produtos médicos e equipamentos para profissionais da saúde, hospitais, clínicas e estudantes da área médica. Com uma ampla gama de produtos, desde itens de uso diário até equipamentos especializados, a MED SHOP visa facilitar o acesso a materiais de qualidade, promovendo uma melhor prática médica e contribuindo para a saúde e bem-estar dos pacientes.
+## Features 🌟
 
-## Funcionalidades 🌟
-
-- **Compra de Produtos:** Os usuários podem navegar pela seleção de produtos, visualizar detalhes e especificações, e realizar compras online com facilidade.
+- **Product Purchase:** Users can browse the product selection, view details and specifications, and easily make online purchases.
 
 ![image](https://github.com/lyannabueno/med_shop/assets/130186281/2cc79050-49be-43c3-ae76-f8fad52f5b8c)
 
-- **Consulta de Informações:** Cada produto possui uma página ou modal com informações detalhadas, incluindo características, benefícios e indicações de uso.
+- **Information Consultation:** Each product has a page or modal with detailed information, including characteristics, benefits, and usage indications.
 
 ![image](https://github.com/lyannabueno/med_shop/assets/130186281/37359d27-6ee4-4790-86c5-f035da6b87bc)
 
-- **Contato Direto:** Usuários com dúvidas ou que necessitam de assistência podem facilmente entrar em contato com a equipe da loja através da seção de contato, garantindo um suporte eficiente e personalizado.
+- **Direct Contact:** Users with questions or who need assistance can easily contact the store team through the contact section, ensuring efficient and personalized support.
 
 ![image](https://github.com/lyannabueno/med_shop/assets/130186281/13b12694-9b27-4679-afc2-8cc618914482)
 
-## Tecnologias Utilizadas 📚
+## Technologies Used 📚
 
-- **HTML5:** Estrutura da página web.
-- **CSS3:** Estilização da interface do usuário.
-- **JavaScript:** Interações dinâmicas na página, melhorando a usabilidade e a interação do usuário.
-- **jQuery 3.7.1:** Utilizado para simplificar o JavaScript, como na validação de formulários e manipulação do DOM para uma experiência de usuário mais interativa.
-- **jQuery Validate 1.19.5:** Garante que os dados inseridos no campo de formulário sejam válidos e completos, com regras específicas para cada campo
-- **Messages PT-BR 1.19.5:** Fornece traduções em português para as mensagens de validação, melhorando a experiência do usuário brasileiro.
-- **Bootstrap 5.3.2:** Estiliza e estrutura o layout do site, incluindo o sistema de grid para layouts responsivos, componentes de interface como botões e formulários, e utilitários de CSS para margens, padding e alinhamento
+- **HTML5:** Web page structure.
+- **CSS3:** User interface styling.
+- **JavaScript:** Dynamic interactions on the page, improving user usability and interaction.
+- **jQuery 3.7.1:** Used to simplify JavaScript, such as in form validation and DOM manipulation for a more interactive user experience.
+- **jQuery Validate 1.19.5:** Ensures that the data entered in the form field are valid and complete, with specific rules for each field.
+- **Messages PT-BR 1.19.5:** Provides Portuguese translations for validation messages, improving the experience of the Brazilian user.
+- **Bootstrap 5.3.2:** Styles and structures the site layout, including the grid system for responsive layouts, interface components like buttons and forms, and CSS utilities for margins, padding, and alignment.
 
-## Como Navegar 🩺
+## How to Navigate 🩺
 
-Para entrar no site e adquiri um produto, você não precisa instalar nada. Simplesmente clone ou baixe o projeto para o seu computador e abra o arquivo `index.html` em um navegador de sua escolha.
+To enter the site and purchase a product, you don't need to install anything. Simply clone or download the project to your computer and open the `index.html` file in a browser of your choice.
 
-### Passos para Executar
+### Steps to Execute
 
-1. **Clone ou baixe o repositório:**
+1. **Clone or download the repository:**
 
 ```bash
 https://github.com/lyannabueno/med_shop.git
 ```
 
-2. **Abra o arquivo `index.html`:**
+2. **Open the `index.html` file:**
 
-Localize o arquivo `index.html` no diretório do projeto e abra-o em um navegador web.
+Locate the `index.html` file in the project directory and open it in a web browser.
 
-## Contribuições 🫂
+## Contributions 🫂
 
-Contribuições para melhorar a calculadora de médias são bem-vindas. Se você tem uma sugestão para melhorar este projeto, sinta-se à vontade para criar um fork do repositório, fazer suas alterações e enviar um pull request.
+Contributions to improve the average calculator are welcome. If you have a suggestion to improve this project, feel free to create a fork of the repository, make your changes, and submit a pull request.
 
-## Contato 📩
+## Contact 📩
 
 Ana Bueno - anabuenogomes@hotmail.com
 
-Link do projeto: https://med-shop-7yxyyuf8t-lyannabueno.vercel.app
-
----
+Project link: https://med-shop-7yxyyuf8t-lyannabueno.vercel.app
