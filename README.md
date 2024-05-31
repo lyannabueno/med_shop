@@ -1,28 +1,28 @@
 # MED SHOP 🏥
 
+![image](https://github.com/lyannabueno/med_shop/assets/130186281/13b12694-9b27-4679-afc2-8cc618914482)
+
 ## Features 🌟
 
 - **Product Purchase:** Users can browse the product selection, view details and specifications, and easily make online purchases.
 
-![image](https://github.com/lyannabueno/med_shop/assets/130186281/2cc79050-49be-43c3-ae76-f8fad52f5b8c)
-
 - **Information Consultation:** Each product has a page or modal with detailed information, including characteristics, benefits, and usage indications.
-
-![image](https://github.com/lyannabueno/med_shop/assets/130186281/37359d27-6ee4-4790-86c5-f035da6b87bc)
 
 - **Direct Contact:** Users with questions or who need assistance can easily contact the store team through the contact section, ensuring efficient and personalized support.
 
-![image](https://github.com/lyannabueno/med_shop/assets/130186281/13b12694-9b27-4679-afc2-8cc618914482)
-
 ## Technologies Used 📚
 
-- **HTML5:** Web page structure.
-- **CSS3:** User interface styling.
-- **JavaScript:** Dynamic interactions on the page, improving user usability and interaction.
-- **jQuery 3.7.1:** Used to simplify JavaScript, such as in form validation and DOM manipulation for a more interactive user experience.
-- **jQuery Validate 1.19.5:** Ensures that the data entered in the form field are valid and complete, with specific rules for each field.
-- **Messages PT-BR 1.19.5:** Provides Portuguese translations for validation messages, improving the experience of the Brazilian user.
-- **Bootstrap 5.3.2:** Styles and structures the site layout, including the grid system for responsive layouts, interface components like buttons and forms, and CSS utilities for margins, padding, and alignment.
+<p align="center">
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+    <img src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery">
+    <img src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+</p>
+
+#### What I learned in this project:
+- Overlay a header while scrolling the page
+- Create a navbar, modal, cards, input boxes, buttons and menus styled with bootstrap
 
 ## How to Navigate 🩺
 
